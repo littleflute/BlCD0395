@@ -1,0 +1,82 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>		
+<div id="id_div_mp4i_bat_info" > <a target="_blank" href="https://github.com/littleflute/bat/edit/master/bat/mp4index/mp4i.bat">v1.2. 113 * </a> </div>			 
+<div id="DivCurTime"></div> 
+<br>  
+<button onclick="play('(There'll Be) Peace in the Valley (For Me).mp3')">1:(There'll Be) Peace in the Valley (For Me).mp3</button> 
+<button onclick="play('All Over Again.mp3')">2:All Over Again.mp3</button> 
+<button onclick="play('Ballad of a Teenage Queen.mp3')">3:Ballad of a Teenage Queen.mp3</button> 
+<button onclick="play('Big River.mp3')">4:Big River.mp3</button> 
+<button onclick="play('Cry Cry Cry.mp3')">5:Cry Cry Cry.mp3</button> 
+<button onclick="play('Doin' My Time.mp3')">6:Doin' My Time.mp3</button> 
+<button onclick="play('Five Feet High and Rising.mp3')">7:Five Feet High and Rising.mp3</button> 
+<button onclick="play('Folsom Prison Blues.mp3')">8:Folsom Prison Blues.mp3</button> 
+<button onclick="play('Frankie's Man Johnny.mp3')">9:Frankie's Man Johnny.mp3</button> 
+<button onclick="play('Get Rhythm.mp3')">10:Get Rhythm.mp3</button> 
+<br> 
+<button onclick="play('Give My Love to Rose.mp3')">11:Give My Love to Rose.mp3</button> 
+<button onclick="play('Guess Things Happen That Way.mp3')">12:Guess Things Happen That Way.mp3</button> 
+<button onclick="play('Hey Porter.mp3')">13:Hey Porter.mp3</button> 
+<button onclick="play('Home of the Blues.mp3')">14:Home of the Blues.mp3</button> 
+<button onclick="play('I Still Miss Someone.mp3')">15:I Still Miss Someone.mp3</button> 
+<button onclick="play('I Walk the Line.mp3')">16:I Walk the Line.mp3</button> 
+<button onclick="play('I'd Just Be Fool Enough (To Fall).mp3')">17:I'd Just Be Fool Enough (To Fall).mp3</button> 
+<button onclick="play('Luther Played the Boogie.mp3')">18:Luther Played the Boogie.mp3</button> 
+<button onclick="play('Oh What a Dream.mp3')">19:Oh What a Dream.mp3</button> 
+<button onclick="play('Pickin' Time.mp3')">20:Pickin' Time.mp3</button> 
+<br> 
+<button onclick="play('Rock Island Line.mp3')">21:Rock Island Line.mp3</button> 
+<button onclick="play('Sing it Pretty Sue.mp3')">22:Sing it Pretty Sue.mp3</button> 
+<button onclick="play('Tennessee Flat-Top Box.mp3')">23:Tennessee Flat-Top Box.mp3</button> 
+<button onclick="play('Thanks a Lot.mp3')">24:Thanks a Lot.mp3</button> 
+<button onclick="play('The Old Account.mp3')">25:The Old Account.mp3</button> 
+<button onclick="play('The Ways of a Woman in Love.mp3')">26:The Ways of a Woman in Love.mp3</button> 
+<button onclick="play('Walking the Blues.mp3')">27:Walking the Blues.mp3</button> 
+<button onclick="play('Were You There (When They Crucified My Lord).mp3')">28:Were You There (When They Crucified My Lord).mp3</button> 
+<button onclick="play('What Do I Care.mp3')">29:What Do I Care.mp3</button> 
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_png" style="border:1px solid blue;" >				
+</div> 								 
+<br> 	
+<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" >		
+</div> 								
+<br> 
+<video id="myVideo" width="720" height="480" controls> 
+ <source src="v1.mp4" type="video/mp4">  
+Your browser does not support HTML5 video. 
+</video>  
+<script>  
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var _loadScript = function (id,src){					
+var	r = document.createElement("script");		
+r.id = id;				
+r.src = src; 				
+document.body.appendChild(r);		
+}					
+_loadScript ("id_script_plx","plx.js");				
+</script> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>				
+<script src="https://littleflute.github.io/JavaScript/blclass.js"></script>		
+<script src="https://littleflute.github.io/JavaScript/blApp.js"></script>		
+</body> 
